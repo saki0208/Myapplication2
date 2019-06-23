@@ -6,27 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".DisplayMessageActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <com.github.mikephil.charting.charts.BarChart
-            android:id="@+id/bar_chart"
+        <TextView
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/a"/>
+
+
+       <com.github.mikephil.charting.charts.BarChart
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="16dp"
-            />
+            android:id="@+id/mp_BarChart" ></com.github.mikephil.charting.charts.BarChart>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+        <TextView
+            android:text="@string/end"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
